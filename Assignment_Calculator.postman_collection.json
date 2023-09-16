@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "44f2079e-cc16-426e-9ab9-3f8b2f94b690",
+		"name": "Assignment_Calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20252361"
+	},
+	"item": [
+		{
+			"name": "Multiplication",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"type_of_operation\": \"ADDITION\",\r\n    \"number_1\" : 10,\r\n    \"number_2\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/arithmeticOperation?type_of_operation=MULTIPLICATION&number_1=10&number_2=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arithmeticOperation"
+					],
+					"query": [
+						{
+							"key": "type_of_operation",
+							"value": "MULTIPLICATION"
+						},
+						{
+							"key": "number_1",
+							"value": "10"
+						},
+						{
+							"key": "number_2",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Addition",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/arithmeticOperation?type_of_operation=ADDITION&number_1=10&number_2=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arithmeticOperation"
+					],
+					"query": [
+						{
+							"key": "type_of_operation",
+							"value": "ADDITION"
+						},
+						{
+							"key": "number_1",
+							"value": "10"
+						},
+						{
+							"key": "number_2",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Subtraction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/arithmeticOperation?type_of_operation=SUBTRACTION&number_1=10&number_2=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arithmeticOperation"
+					],
+					"query": [
+						{
+							"key": "type_of_operation",
+							"value": "SUBTRACTION"
+						},
+						{
+							"key": "number_1",
+							"value": "10"
+						},
+						{
+							"key": "number_2",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Division",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/arithmeticOperation?type_of_operation=DIVISION&number_1=100&number_2=20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"arithmeticOperation"
+					],
+					"query": [
+						{
+							"key": "type_of_operation",
+							"value": "DIVISION"
+						},
+						{
+							"key": "number_1",
+							"value": "100"
+						},
+						{
+							"key": "number_2",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
